@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave to Airport - trip to airport schedule planner</title>
+
+    <meta name="description" content="Leave to Airport is a simple schedule planner for your trip to airport. Never miss a flight!">
+    <meta name="robots" content="index, nofollow">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="leavetoairport.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <p class="leave">My flight is at <input id="departH" class="hours" type="number" pattern="[0-9]*" inputmode="numeric" value="12">: <input id="departM" class="minutes" type="number" inputmode="numeric" value="00"></p>
+    <p class="packing">Packing time for me is <input id="packingH" class="hours" type="number" inputmode="numeric" value="01">: <input id="packingM" class="minutes" type="number" inputmode="numeric" value="00"></p>
+    <p class="timetoairport">Travel time to airport is <input id="travelH" class="hours" type="number" inputmode="numeric" value="01">: <input id="travelM" class="minutes" type="number" inputmode="numeric" value="30"></p>
+    <p class="leave">I plan to be there before the flight in <input id="arrivebeforeH" class="hours" type="number" inputmode="numeric" value="02">: <input id="arrivebeforeM" class="minutes"  type="number" inputmode="numeric" value="00"></p>
+    <p class="draw" onclick="drawScheduler(30, 4, 160, 360);unHideElement('timeline');scrollToElemet('timeline')">When do I leave to airport?</p>
+
+<div id="timeline" hidden>
+    <canvas width="800px" height="1px"></canvas>
+</div>
+
+<script type="text/javascript"src="leavetoairport.js"></script>
+
+<script>
+    addValidationEventListeners();
+</script>
+
+</body>
+
+</html>

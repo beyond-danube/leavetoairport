@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.leave {
+    color: #24AE60;
+}
+
+.packing {
+    color: #2D9CDB;
+}
+
+.timetoairport {    
+    color: #BB6BD9;
+}
+
+.draw {
+    color: white;
+    text-decoration: underline;
+}
+
+p {
+    font-family:  Roboto, 'Open Sans', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 300;
+    font-size: 4em;
+}
+
+input {
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: inherit;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+    width: 1.4em;
+    padding: 0em;
+}
+
